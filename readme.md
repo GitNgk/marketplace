@@ -79,9 +79,10 @@ truffle migrate --reset
 cd marketplace/client
 // Serves the front-end on http://localhost:3000
 npm run dev
+```
 Truffle can run tests written in Solidity or JavaScript against your smart contracts. Note the command varies slightly if you're in or outside of the development console.
-
-// If outside the development console..
+```
+// If outside the development console.. working directory marketplace
 truffle test
 ```
 
