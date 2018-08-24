@@ -1,6 +1,5 @@
 # Online Marketplace
 ## Description
-
 Create an online marketplace that operates on the blockchain. There are a list of stores on a central marketplace where shoppers can purchase goods posted by the store owners. The central marketplace is managed by a group of administrators. Admins allow store owners to add stores to the marketplace. Store owners can manage their store’s inventory and funds. Shoppers can visit stores and purchase goods that are in stock using cryptocurrency.
 
 ### User Stories:
@@ -12,11 +11,9 @@ An administrator opens the web app. The web app reads the address and identifies
 The most common design pattern used in this project is to restrict access. These restrictions have been explained below:
 
 ### Restrict Access
-
 Modifications to your contract’s state or call to contract’s functions have been restricted using `function modifiers`.
 
 #### modifiers & required 
-
 Used to check for execution as early as possible in the function body and throws an exception if the condition is not met:
 e.g
 ```
@@ -55,7 +52,6 @@ e.g
  - Failed bid refund user depending on address.
 
 ### Auto Deprecation
-
 #### Auction
  Is used in the Auction contract with a duration set by the Stores once this exceeds, no further Bids can occur the contract winning Bid ether transferred to Orders and remaining ether left for withdrawal by
  losing bidders.
@@ -71,7 +67,6 @@ e.g
 Order state remain active until the return policy duration is reached at this point if the order is not in Refund state payment to manager can be made.
 
 ### Pull over Push Payments
-
  Orders contract allows payments by means of payable function and withdrawals. Each are separated and constrained by state of order. This allow security for buyer to be able to get refunds should the item be unsatisfactory. It also eliminates reenterance by using changes to state of orders and limiting the withdrawal to buyer or seller using Restrict Access.
 ```
  e.g
@@ -97,12 +92,11 @@ Order state remain active until the return policy duration is reached at this po
 ```
 
 ### State Machine
-
 Orders contract has various states and only specific participants such as manager, buyer or admin can change them.:
 ```
    /* Sale timming check */
-   modifier onlyBefore(uint _orderId) { require(now < orders[_orderId].date,"Check BEFORE time expires"); _; }
-   modifier onlyAfter(uint _orderId) { require(now > orders[_orderId].date,"Check AFTER time expires"); _; }
+   modifier onlyBefore(uint _orderId) {require(now < orders[_orderId].date,"Check BEFORE time expires"); _; }
+   modifier onlyAfter(uint _orderId) {require(now > orders[_orderId].date,"Check AFTER time expires"); _; }
 
    /* Sale status checks */
    modifier sold (uint _orderId) {require(orders[_orderId].state == State.Sold,"Check Item SOLD"); _;}
@@ -119,11 +113,11 @@ e.g Purchasing example
  / \		    |
   |			   / \	
   |			    ^
- =|=========|===============Store.sol==========================================================================
+ =|=========|===============Store.sol========================================================================
   |         |
   |---------|--------------addItem>----------->[Creates Item sets auction or sale method]
-  |			    |--------------buyItem>----------->[Buyer buys item1 --reduces the inventory]    {forSale}          StartTime
-  |			    |
+  |			|--------------buyItem>----------->[Buyer buys item1 --reduces the inventory]    {forSale}              StartTime
+  |			|
   |         |					
  =|=========|==============Orders.sol========================================================================
   |         |
@@ -139,22 +133,22 @@ e.g Purchasing example
 e.g Auction example
 ```
  \o/
-  |		     \o/
+  |		  \o/
  / \	      |
-  |		     / \     \o/
+  |		  / \     \o/
   |         |       |
-  |  		    |      / \
+  |  		   |      / \
   |         |       |
- =|=========|=======|=======Store.sol==========================================================================
+ =|=========|=======|=======Store.sol============================================================================
   |         |       |
   |---------|-------|------addItem>----------->[Creates Item sets auction]                 {forAuction}
   |         |       |
   |         |       |
  =|=========|=======|=======Auction.sol==========================================================================
-  |			    |       |
+  |		   |       |
   |         |-------|------bid>--------------->[Create HighestBid](lock bid value)         {Auction (now<auctionEnd}}
-  |			    |       |
-  |			    |       |------bid>--------------->[Replace last bid ](lock bid value)-----
+  |			|       |
+  |		   |       |------bid>--------------->[Replace last bid ](lock bid value)-----
   |         |       |                                                                 |
   |         |-------|-withdraw>-------------->(allow previous bid amount withdrawal)<-|
   |                 |
