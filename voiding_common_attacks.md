@@ -33,7 +33,7 @@ modifier forSale (uint _sku,uint _quantity) { require(items[_sku].inventory >= _
 ```
 In addition to this the SafeMath.sol library has been used when doing uint operations.
 
-###TX.ORIGIN PROBLEM
+### TX.ORIGIN PROBLEM
 - Used msg.sender rather than tx.origin
 
 ### GAS LIMITS
