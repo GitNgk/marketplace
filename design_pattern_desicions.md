@@ -220,3 +220,6 @@ note: Factory contract also employs Forward data and calls to Store and Orders
 
 #### Forward data and calls
 Store: Contract forwards data to Auction & Orders Contract
+
+## Cicuit Breaker / Emergency Stop
+A circuit breaker is implemented in the Orders contract to stop all fund withdrawals and orders creations. This can only be issued by the administrators of the Factory contract and will stop all withdrawal attempts by both buyer or sellers. The use of contract linking can also act as a circuit breaker as administrators can zero or change the storeAddress, ordersAddress in the Orders and Store contracts respectively and therefore calls between contracts throw `require` errors. The two methods coupled together can act as a double barrier and effectively sever the interaction between contracts until administrator reverts them or updates them.
