@@ -43,7 +43,7 @@ contract Store {
     modifier checkValue(uint _sku,uint _quantity) {
         _;
         uint _price = items[_sku].price;
-        uint amountToRefund = msg.value.sub(_price.mul(_quantity));
+        uint amountToRefund = msg.value.sub(_price.mul(_quantity)); ////
         msg.sender.transfer(amountToRefund);
     }
 
@@ -54,10 +54,9 @@ contract Store {
         skuCount = 0;
     }
 
-    /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-    /* Managers only  Functions       */ 
-    /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-    
+    /*
+    Managers only  Functions 
+    */
     function addItem(
         string _name,
         string _ipfsHash,
@@ -119,9 +118,9 @@ contract Store {
         return (true);
     }
      
-    /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-    /* Anyone Can run Functions       */ 
-    /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    /*
+    Anyone Can run Functions 
+    */
 
     function buyItem(uint _sku, uint _quantity)
         public
@@ -191,10 +190,9 @@ contract Store {
         return (sku, name, ipfsHash, description, price, inventory, _auction, seller);
     }
  
-    /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-    /* Factory Admin Functions        */ 
-    /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-    
+    /*
+    Factory Admin Functions 
+    */
     function setOrderAddress(address _orderAddress) public 
         verifyCaller(factoryAddress)
         returns (bool)

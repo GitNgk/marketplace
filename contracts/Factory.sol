@@ -31,9 +31,9 @@ contract Factory {
         
     }
     
-   /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-   /*  Approved Owners               */
-   /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    /*
+    Approved Owners
+    */
     function createStore(string _name) public restrictedOwners {
         Store newStore = new Store(_name,msg.sender);
         Orders newOrder = new Orders(msg.sender,refundTime,newStore);
@@ -48,9 +48,9 @@ contract Factory {
         approvedStoreOwner[msg.sender] = false;
     }
     
-   /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-   /*  Anyone to Create Store        */
-   /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */    
+    /*
+    Anyone to Create Store
+    */
     function getDeployedStores() public view returns (address[]) {
         return deployedStores;
     }
@@ -58,9 +58,10 @@ contract Factory {
     function getOrderFromStore(address _storeAddress) public view returns (address orderAddress) {
         return storeAndOrders[_storeAddress];
     }
-   /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-   /*  Admin only task               */
-   /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+    /*
+    Admin only task
+    */
     function resolveDispute(uint _orderId,address _storeAddress,address _winner) 
     public
     restrictedStaff
@@ -82,9 +83,7 @@ contract Factory {
     public
     restrictedStaff
     {   
-        Store(_storeAddress).setOrderAddress(_newAddress);
-        
-        
+        Store(_storeAddress).setOrderAddress(_newAddress);   
     }
     
     function updateFactory(address _storeAddress, address _orderAddress, address _factoryAddress) 
@@ -109,10 +108,14 @@ contract Factory {
     function delStoreOwner(address _address) public restrictedStaff {
         delete approvedStoreOwner[_address];
     }
-   
-    /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-    /*  Admin only task               */
-    /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+    function stopStartWithdrawals(address _address) public restrictedStaff {
+        Orders(_address).toggleContractActive();
+    }
+
+    /*
+    Manager only task
+    */
     function addAdminStaff(address _address) public restricted {
         adminStaff[_address] = true;
     }
@@ -120,5 +123,4 @@ contract Factory {
     function delAdminStaff(address _address) public restricted {
         delete adminStaff[_address];
     }
-
 }

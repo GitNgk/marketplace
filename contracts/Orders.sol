@@ -16,6 +16,7 @@ contract Orders {
         State state;
     }
 
+    bool private stopped = false;
     mapping(address => uint[]) buyersOrders;
     mapping(address => bool) public buyerList;
    
@@ -33,6 +34,10 @@ contract Orders {
     event Refund(uint sku);
     event Approved(uint sku);
     event OrderCreated(uint sku);
+
+    /* Circuit Breaker */
+    modifier stopInEmergency {require(!stopped); _;}
+    modifier onlyInEmergency {require(stopped); _;}
 
     /* Sale timming check */
     modifier onlyBefore(uint _orderId) {require(block.timestamp < orders[_orderId].date,"Check BEFORE time expires"); _;}
@@ -66,12 +71,13 @@ contract Orders {
     function() public payable {
     }
    
-    /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-    /*  Store related tasks           */
-    /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */ 
+    /*
+    Store related tasks
+    */ 
     function createOrder(uint _itemId,uint _price, address _buyer, uint _quantity)
       public
-      verifyCaller(storeAddress) 
+      verifyCaller(storeAddress)
+      stopInEmergency
       returns (uint orderId)
     {
         orders[orderCount] = Order({
@@ -91,9 +97,9 @@ contract Orders {
         return(orderCount-1);
     }
 
-    /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-    /*  Buyer relates tasks           */
-    /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    /*
+    Buyer relates tasks
+    */
 
     /* Change the state of the item to received and call event! */
     function updateAddress(uint _orderId,string _deliver) public
@@ -127,6 +133,7 @@ contract Orders {
     function buyerWithdraws(uint _orderId) public payable 
         verifyCaller(orders[_orderId].buyer)
         approvedRefund(_orderId)
+        stopInEmergency
     {
         Order storage order = orders[_orderId];
         order.state = State.Complete;
@@ -159,11 +166,9 @@ contract Orders {
         return (_orderId,item,price,deliver,quantity,date,state);
     }
 
-    /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-    /*   Seller related tasks         */
-    /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-   
-   
+    /*
+    Seller related tasks
+    */
     /*  Change the state of the item to shipped and call event!*/
     function shipItem(uint _orderId) 
         public
@@ -188,6 +193,7 @@ contract Orders {
 
     function managerGetPaid(uint _orderId) public payable 
         restricted
+        stopInEmergency
         onlyAfter(_orderId)
         notComplete(_orderId)
     {
@@ -197,9 +203,16 @@ contract Orders {
         manager.transfer(order.price);
     }
 
-    /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-    /* Factory Admin Functions        */ 
-    /* ->>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    /*
+    Factory Admin Functions
+    */
+    function toggleContractActive() 
+        public 
+        verifyCaller(factoryAddress)
+    {
+        // Stop withdrawls and Order creation
+        stopped = !stopped;
+    }
 
     function adminResolvesDispute(uint _orderId, address _winner) 
        public
