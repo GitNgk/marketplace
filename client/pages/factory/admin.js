@@ -7,6 +7,7 @@ import AddRemoveStoreManagerForm from '../components/addRemoveStoreManagerForm'
 import ChangeRefundTimeForm from '../components/changeRefundTimeForm'
 import UpdateContractForm from '../components/updateContractForm'
 import UpdateContractFactoryForm from '../components/updateContractFactoryForm'
+import WithdrawStopStartForm from '../components/withdrawStopStartForm'
 import ResolveDisputeForm from '../components/resolveDisputeForm'
 import { Link } from '../../routes'
 
@@ -77,6 +78,8 @@ class StoresIndex extends Component {
           <UpdateContractForm accounts={accounts} contract={contract} web3={web3} />
         <Divider section />
           <UpdateContractFactoryForm accounts={accounts} contract={contract} web3={web3} />
+        <Divider section />
+          <WithdrawStopStartForm accounts={accounts} contract={contract} web3={web3} />
         <Divider section />
           <h4>Add & Remove Site Administrators</h4>
           <AddRemoveAdminForm accounts={accounts} contract={contract} web3={web3} />

@@ -175,8 +175,8 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b506040516080806106b1833981016040908152815160208301519183015160609093015160038054600160a060020a03909416600160a060020a0319948516179055600093909355420160045560029190915560018054909116331790556106348061007d6000396000f3006080604052600436106100985763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416631998aeef811461009d5780632a24f46c146100a757806338af3eed146100bc5780633ccfd60b146100ed5780634462f40c1461011657806361c7628b1461013d57806391f9015714610152578063975057e714610167578063d57bde791461017c575b600080fd5b6100a5610191565b005b3480156100b357600080fd5b506100a56102d6565b3480156100c857600080fd5b506100d161055f565b60408051600160a060020a039092168252519081900360200190f35b3480156100f957600080fd5b5061010261056e565b604080519115158252519081900360200190f35b34801561012257600080fd5b5061012b6105d8565b60408051918252519081900360200190f35b34801561014957600080fd5b5061012b6105de565b34801561015e57600080fd5b506100d16105e4565b34801561017357600080fd5b506100d16105f3565b34801561018857600080fd5b5061012b610602565b6004544211156101eb576040805160e560020a62461bcd02815260206004820152601660248201527f41756374696f6e20616c726561647920656e6465642e00000000000000000000604482015290519081900360640190fd5b6006543411610244576040805160e560020a62461bcd02815260206004820152601e60248201527f546865726520616c7265616479206973206120686967686572206269642e0000604482015290519081900360640190fd5b6006541561027157600654600554600160a060020a03166000908152600760205260409020805490910190555b6005805473ffffffffffffffffffffffffffffffffffffffff19163390811790915534600681905560408051928352602083019190915280517ff4757a49b326036464bec6fe419a4ae38c8a02ce3e68bf0809674f6aab8ad3009281900390910190a1565b600454421015610330576040805160e560020a62461bcd02815260206004820152601660248201527f41756374696f6e206e6f742079657420656e6465642e00000000000000000000604482015290519081900360640190fd5b60085460ff16156103b1576040805160e560020a62461bcd02815260206004820152602360248201527f61756374696f6e456e642068617320616c7265616479206265656e2063616c6c60448201527f65642e0000000000000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b6006546002541115610433576040805160e560020a62461bcd02815260206004820152602860248201527f61756374696f6e456e6420446964206e6f7420657863656564206d696e696d7560448201527f6d2070726963652e000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b6008805460ff1916600117905560055460065460408051600160a060020a039093168352602083019190915280517fdaec4582d5d9595688c8c98545fdd1c696d41c6aeaeb636737e84ed2f5c00eda9281900390910190a1600354600654604051600160a060020a039092169181156108fc0291906000818181858888f193505050501580156104c7573d6000803e3d6000fd5b5060015460008054600654600554604080517f36bb3a7e00000000000000000000000000000000000000000000000000000000815260048101949094526024840192909252600160a060020a03908116604484015290519316926336bb3a7e9260648084019391929182900301818387803b15801561054557600080fd5b505af1158015610559573d6000803e3d6000fd5b50505050565b600354600160a060020a031681565b33600090815260076020526040812054818111156105cf57336000818152600760205260408082208290555183156108fc0291849190818181858888f1935050505015156105cf5733600090815260076020526040812082905591506105d4565b600191505b5090565b60005481565b60045481565b600554600160a060020a031681565b600154600160a060020a031681565b600654815600a165627a7a72305820dd43dc2d4f8d020ef886f0f27917aee5648842f956d1b92ee7d6818f679b51230029",
-  "deployedBytecode": "0x6080604052600436106100985763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416631998aeef811461009d5780632a24f46c146100a757806338af3eed146100bc5780633ccfd60b146100ed5780634462f40c1461011657806361c7628b1461013d57806391f9015714610152578063975057e714610167578063d57bde791461017c575b600080fd5b6100a5610191565b005b3480156100b357600080fd5b506100a56102d6565b3480156100c857600080fd5b506100d161055f565b60408051600160a060020a039092168252519081900360200190f35b3480156100f957600080fd5b5061010261056e565b604080519115158252519081900360200190f35b34801561012257600080fd5b5061012b6105d8565b60408051918252519081900360200190f35b34801561014957600080fd5b5061012b6105de565b34801561015e57600080fd5b506100d16105e4565b34801561017357600080fd5b506100d16105f3565b34801561018857600080fd5b5061012b610602565b6004544211156101eb576040805160e560020a62461bcd02815260206004820152601660248201527f41756374696f6e20616c726561647920656e6465642e00000000000000000000604482015290519081900360640190fd5b6006543411610244576040805160e560020a62461bcd02815260206004820152601e60248201527f546865726520616c7265616479206973206120686967686572206269642e0000604482015290519081900360640190fd5b6006541561027157600654600554600160a060020a03166000908152600760205260409020805490910190555b6005805473ffffffffffffffffffffffffffffffffffffffff19163390811790915534600681905560408051928352602083019190915280517ff4757a49b326036464bec6fe419a4ae38c8a02ce3e68bf0809674f6aab8ad3009281900390910190a1565b600454421015610330576040805160e560020a62461bcd02815260206004820152601660248201527f41756374696f6e206e6f742079657420656e6465642e00000000000000000000604482015290519081900360640190fd5b60085460ff16156103b1576040805160e560020a62461bcd02815260206004820152602360248201527f61756374696f6e456e642068617320616c7265616479206265656e2063616c6c60448201527f65642e0000000000000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b6006546002541115610433576040805160e560020a62461bcd02815260206004820152602860248201527f61756374696f6e456e6420446964206e6f7420657863656564206d696e696d7560448201527f6d2070726963652e000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b6008805460ff1916600117905560055460065460408051600160a060020a039093168352602083019190915280517fdaec4582d5d9595688c8c98545fdd1c696d41c6aeaeb636737e84ed2f5c00eda9281900390910190a1600354600654604051600160a060020a039092169181156108fc0291906000818181858888f193505050501580156104c7573d6000803e3d6000fd5b5060015460008054600654600554604080517f36bb3a7e00000000000000000000000000000000000000000000000000000000815260048101949094526024840192909252600160a060020a03908116604484015290519316926336bb3a7e9260648084019391929182900301818387803b15801561054557600080fd5b505af1158015610559573d6000803e3d6000fd5b50505050565b600354600160a060020a031681565b33600090815260076020526040812054818111156105cf57336000818152600760205260408082208290555183156108fc0291849190818181858888f1935050505015156105cf5733600090815260076020526040812082905591506105d4565b600191505b5090565b60005481565b60045481565b600554600160a060020a031681565b600154600160a060020a031681565b600654815600a165627a7a72305820dd43dc2d4f8d020ef886f0f27917aee5648842f956d1b92ee7d6818f679b51230029",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516080806106b1833981016040908152815160208301519183015160609093015160038054600160a060020a03909416600160a060020a0319948516179055600093909355420160045560029190915560018054909116331790556106348061007d6000396000f3006080604052600436106100985763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416631998aeef811461009d5780632a24f46c146100a757806338af3eed146100bc5780633ccfd60b146100ed5780634462f40c1461011657806361c7628b1461013d57806391f9015714610152578063975057e714610167578063d57bde791461017c575b600080fd5b6100a5610191565b005b3480156100b357600080fd5b506100a56102d6565b3480156100c857600080fd5b506100d161055f565b60408051600160a060020a039092168252519081900360200190f35b3480156100f957600080fd5b5061010261056e565b604080519115158252519081900360200190f35b34801561012257600080fd5b5061012b6105d8565b60408051918252519081900360200190f35b34801561014957600080fd5b5061012b6105de565b34801561015e57600080fd5b506100d16105e4565b34801561017357600080fd5b506100d16105f3565b34801561018857600080fd5b5061012b610602565b6004544211156101eb576040805160e560020a62461bcd02815260206004820152601660248201527f41756374696f6e20616c726561647920656e6465642e00000000000000000000604482015290519081900360640190fd5b6006543411610244576040805160e560020a62461bcd02815260206004820152601e60248201527f546865726520616c7265616479206973206120686967686572206269642e0000604482015290519081900360640190fd5b6006541561027157600654600554600160a060020a03166000908152600760205260409020805490910190555b6005805473ffffffffffffffffffffffffffffffffffffffff19163390811790915534600681905560408051928352602083019190915280517ff4757a49b326036464bec6fe419a4ae38c8a02ce3e68bf0809674f6aab8ad3009281900390910190a1565b600454421015610330576040805160e560020a62461bcd02815260206004820152601660248201527f41756374696f6e206e6f742079657420656e6465642e00000000000000000000604482015290519081900360640190fd5b60085460ff16156103b1576040805160e560020a62461bcd02815260206004820152602360248201527f61756374696f6e456e642068617320616c7265616479206265656e2063616c6c60448201527f65642e0000000000000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b6006546002541115610433576040805160e560020a62461bcd02815260206004820152602860248201527f61756374696f6e456e6420446964206e6f7420657863656564206d696e696d7560448201527f6d2070726963652e000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b6008805460ff1916600117905560055460065460408051600160a060020a039093168352602083019190915280517fdaec4582d5d9595688c8c98545fdd1c696d41c6aeaeb636737e84ed2f5c00eda9281900390910190a1600354600654604051600160a060020a039092169181156108fc0291906000818181858888f193505050501580156104c7573d6000803e3d6000fd5b5060015460008054600654600554604080517f36bb3a7e00000000000000000000000000000000000000000000000000000000815260048101949094526024840192909252600160a060020a03908116604484015290519316926336bb3a7e9260648084019391929182900301818387803b15801561054557600080fd5b505af1158015610559573d6000803e3d6000fd5b50505050565b600354600160a060020a031681565b33600090815260076020526040812054818111156105cf57336000818152600760205260408082208290555183156108fc0291849190818181858888f1935050505015156105cf5733600090815260076020526040812082905591506105d4565b600191505b5090565b60005481565b60045481565b600554600160a060020a031681565b600154600160a060020a031681565b600654815600a165627a7a723058201867fa22a476028726a6ebff1779bb6cdbe43845052e224b7a14951ba3bba0770029",
+  "deployedBytecode": "0x6080604052600436106100985763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416631998aeef811461009d5780632a24f46c146100a757806338af3eed146100bc5780633ccfd60b146100ed5780634462f40c1461011657806361c7628b1461013d57806391f9015714610152578063975057e714610167578063d57bde791461017c575b600080fd5b6100a5610191565b005b3480156100b357600080fd5b506100a56102d6565b3480156100c857600080fd5b506100d161055f565b60408051600160a060020a039092168252519081900360200190f35b3480156100f957600080fd5b5061010261056e565b604080519115158252519081900360200190f35b34801561012257600080fd5b5061012b6105d8565b60408051918252519081900360200190f35b34801561014957600080fd5b5061012b6105de565b34801561015e57600080fd5b506100d16105e4565b34801561017357600080fd5b506100d16105f3565b34801561018857600080fd5b5061012b610602565b6004544211156101eb576040805160e560020a62461bcd02815260206004820152601660248201527f41756374696f6e20616c726561647920656e6465642e00000000000000000000604482015290519081900360640190fd5b6006543411610244576040805160e560020a62461bcd02815260206004820152601e60248201527f546865726520616c7265616479206973206120686967686572206269642e0000604482015290519081900360640190fd5b6006541561027157600654600554600160a060020a03166000908152600760205260409020805490910190555b6005805473ffffffffffffffffffffffffffffffffffffffff19163390811790915534600681905560408051928352602083019190915280517ff4757a49b326036464bec6fe419a4ae38c8a02ce3e68bf0809674f6aab8ad3009281900390910190a1565b600454421015610330576040805160e560020a62461bcd02815260206004820152601660248201527f41756374696f6e206e6f742079657420656e6465642e00000000000000000000604482015290519081900360640190fd5b60085460ff16156103b1576040805160e560020a62461bcd02815260206004820152602360248201527f61756374696f6e456e642068617320616c7265616479206265656e2063616c6c60448201527f65642e0000000000000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b6006546002541115610433576040805160e560020a62461bcd02815260206004820152602860248201527f61756374696f6e456e6420446964206e6f7420657863656564206d696e696d7560448201527f6d2070726963652e000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b6008805460ff1916600117905560055460065460408051600160a060020a039093168352602083019190915280517fdaec4582d5d9595688c8c98545fdd1c696d41c6aeaeb636737e84ed2f5c00eda9281900390910190a1600354600654604051600160a060020a039092169181156108fc0291906000818181858888f193505050501580156104c7573d6000803e3d6000fd5b5060015460008054600654600554604080517f36bb3a7e00000000000000000000000000000000000000000000000000000000815260048101949094526024840192909252600160a060020a03908116604484015290519316926336bb3a7e9260648084019391929182900301818387803b15801561054557600080fd5b505af1158015610559573d6000803e3d6000fd5b50505050565b600354600160a060020a031681565b33600090815260076020526040812054818111156105cf57336000818152600760205260408082208290555183156108fc0291849190818181858888f1935050505015156105cf5733600090815260076020526040812082905591506105d4565b600191505b5090565b60005481565b60045481565b600554600160a060020a031681565b600154600160a060020a031681565b600654815600a165627a7a723058201867fa22a476028726a6ebff1779bb6cdbe43845052e224b7a14951ba3bba0770029",
   "sourceMap": "53:4739:0:-;;;1129:325;8:9:-1;5:2;;;30:1;27;20:12;5:2;1129:325:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1274:11;:26;;-1:-1:-1;;;;;1274:26:0;;;-1:-1:-1;;;;;;1274:26:0;;;;;;:11;1311:10;;;;1348:15;:30;1332:13;:46;1389:12;:28;;;;1274:26;1428:18;;;;;1436:10;1428:18;;;53:4739;;;;;;",
   "deployedSourceMap": "53:4739:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1628:1152;;;;;;3534:1255;;8:9:-1;5:2;;;30:1;27;20:12;5:2;3534:1255:0;;;;304:26;;8:9:-1;5:2;;;30:1;27;20:12;5:2;304:26:0;;;;;;;;-1:-1:-1;;;;;304:26:0;;;;;;;;;;;;;;2830:617;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2830:617:0;;;;;;;;;;;;;;;;;;;;;;77:15;;8:9:-1;5:2;;;30:1;27;20:12;5:2;77:15:0;;;;;;;;;;;;;;;;;;;;337:25;;8:9:-1;5:2;;;30:1;27;20:12;5:2;337:25:0;;;;409:28;;8:9:-1;5:2;;;30:1;27;20:12;5:2;409:28:0;;;;99:20;;8:9:-1;5:2;;;30:1;27;20:12;5:2;99:20:0;;;;444:22;;8:9:-1;5:2;;;30:1;27;20:12;5:2;444:22:0;;;;1628:1152;2001:13;;1982:15;:32;;1960:104;;;;;-1:-1:-1;;;;;1960:104:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;2182:10;;2170:9;:22;2148:102;;;;;-1:-1:-1;;;;;2148:102:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;2267:10;;:15;2263:382;;2623:10;;2605:13;;-1:-1:-1;;;;;2605:13:0;2590:29;;;;:14;:29;;;;;:43;;;;;;;2263:382;2655:13;:26;;-1:-1:-1;;2655:26:0;2671:10;2655:26;;;;;;2705:9;2692:10;:22;;;2730:42;;;;;;;;;;;;;;;;;;;;;;;;;1628:1152::o;3534:1255::-;4350:13;;4331:15;:32;;4323:67;;;;;-1:-1:-1;;;;;4323:67:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;4410:5;;;;4409:6;4401:54;;;;;-1:-1:-1;;;;;4401:54:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4490:10;;4474:12;;:26;;4466:79;;;;;-1:-1:-1;;;;;4466:79:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4581:5;:12;;-1:-1:-1;;4581:12:0;4589:4;4581:12;;;4622:13;;4637:10;;4609:39;;;-1:-1:-1;;;;;4622:13:0;;;4609:39;;;;;;;;;;;;;;;;;;;;;4688:11;;4709:10;;4688:32;;-1:-1:-1;;;;;4688:11:0;;;;:32;;;;;4709:10;4688:11;:32;:11;:32;4709:10;4688:11;:32;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;-1:-1;4737:5:0;;;4752:3;;4756:10;;4767:13;;4731:50;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;4767:13:0;;;4731:50;;;;;;4737:5;;;4731:20;;:50;;;;;4737:5;;4731:50;;;;;;4737:5;;4731:50;;;5:2:-1;;;;30:1;27;20:12;5:2;4731:50:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;4731:50:0;;;;3534:1255::o;304:26::-;;;-1:-1:-1;;;;;304:26:0;;:::o;2830:617::-;2912:10;2866:4;2897:26;;;:14;:26;;;;;;2938:10;;;2934:484;;;3168:10;3182:1;3153:26;;;:14;:26;;;;;;:30;;;3205:23;;;;;;3221:6;;3205:23;;3182:1;3205:23;3221:6;3168:10;3205:23;;;;;;;3204:24;3200:207;;;3340:10;3325:26;;;;:14;:26;;;;;:35;;;:26;-1:-1:-1;3379:12:0;;3200:207;3435:4;3428:11;;2830:617;;;:::o;77:15::-;;;;:::o;337:25::-;;;;:::o;409:28::-;;;-1:-1:-1;;;;;409:28:0;;:::o;99:20::-;;;-1:-1:-1;;;;;99:20:0;;:::o;444:22::-;;;;:::o",
   "source": "pragma solidity ^0.4.22;\r\n\r\nimport \"./Store.sol\";\r\n\r\ncontract Auction {\r\n    uint public sku;\r\n    address public store;\r\n    uint minimumPrice;\r\n    \r\n    // Parameters of the auction. Times are either\r\n    // absolute unix timestamps (seconds since 1970-01-01)\r\n    // or time periods in seconds.\r\n    address public beneficiary;\r\n    uint public auctionEndVar;\r\n\r\n    // Current state of the auction.\r\n    address public highestBidder;\r\n    uint public highestBid;\r\n\r\n    // Allowed withdrawals of previous bids\r\n    mapping(address => uint) pendingReturns;\r\n\r\n    // Set to true at the end, disallows any change\r\n    bool ended;\r\n\r\n    // Events that will be fired on changes.\r\n    event HighestBidIncreased(address bidder, uint amount);\r\n    event AuctionEnded(address winner, uint amount);\r\n\r\n    // The following is a so-called natspec comment,\r\n    // recognizable by the three slashes.\r\n    // It will be shown when the user is asked to\r\n    // confirm a transaction.\r\n\r\n    /// Create a simple auction with `_biddingTime`\r\n    /// seconds bidding time on behalf of the\r\n    /// beneficiary address `_beneficiary`.\r\n    constructor(\r\n        uint _biddingTime,\r\n        address _beneficiary,\r\n        uint _sku,\r\n        uint _minimumPrice\r\n    ) public {\r\n        beneficiary = _beneficiary;\r\n        sku = _sku;\r\n        auctionEndVar = block.timestamp + _biddingTime;\r\n        minimumPrice = _minimumPrice;\r\n        store = msg.sender;\r\n    }\r\n\r\n    /// Bid on the auction with the value sent\r\n    /// together with this transaction.\r\n    /// The value will only be refunded if the\r\n    /// auction is not won.\r\n    function bid() public payable {\r\n        // No arguments are necessary, all\r\n        // information is already part of\r\n        // the transaction. The keyword payable\r\n        // is required for the function to\r\n        // be able to receive Ether.\r\n\r\n        // Revert the call if the bidding\r\n        // period is over.\r\n        require(\r\n            block.timestamp <= auctionEndVar,\r\n            \"Auction already ended.\"\r\n        );\r\n\r\n        // If the bid is not higher, send the\r\n        // money back.\r\n        require(\r\n            msg.value > highestBid,\r\n            \"There already is a higher bid.\"\r\n        );\r\n\r\n        if (highestBid != 0) {\r\n            // Sending back the money by simply using\r\n            // highestBidder.send(highestBid) is a security risk\r\n            // because it could execute an untrusted contract.\r\n            // It is always safer to let the recipients\r\n            // withdraw their money themselves.\r\n            pendingReturns[highestBidder] += highestBid;\r\n        }\r\n        highestBidder = msg.sender;\r\n        highestBid = msg.value;\r\n        emit HighestBidIncreased(msg.sender, msg.value);\r\n    }\r\n\r\n    /// Withdraw a bid that was overbid.\r\n    function withdraw() public returns (bool) {\r\n        uint amount = pendingReturns[msg.sender];\r\n        if (amount > 0) {\r\n            // It is important to set this to zero because the recipient\r\n            // can call this function again as part of the receiving call\r\n            // before `send` returns.\r\n            pendingReturns[msg.sender] = 0;\r\n\r\n            if (!msg.sender.send(amount)) {\r\n                // No need to call throw here, just reset the amount owing\r\n                pendingReturns[msg.sender] = amount;\r\n                return false;\r\n            }\r\n        }\r\n        return true;\r\n    }\r\n\r\n    /// End the auction and send the highest bid\r\n    /// to the beneficiary.\r\n    function auctionEnd() public {\r\n        // It is a good guideline to structure functions that interact\r\n        // with other contracts (i.e. they call functions or send Ether)\r\n        // into three phases:\r\n        // 1. checking conditions\r\n        // 2. performing actions (potentially changing conditions)\r\n        // 3. interacting with other contracts\r\n        // If these phases are mixed up, the other contract could call\r\n        // back into the current contract and modify the state or cause\r\n        // effects (ether payout) to be performed multiple times.\r\n        // If functions called internally include interaction with external\r\n        // contracts, they also have to be considered interaction with\r\n        // external contracts.\r\n\r\n        // 1. Conditions\r\n        require(block.timestamp >= auctionEndVar, \"Auction not yet ended.\");\r\n        require(!ended, \"auctionEnd has already been called.\");\r\n        require(minimumPrice <= highestBid, \"auctionEnd Did not exceed minimum price.\");\r\n\r\n        // 2. Effects\r\n        ended = true;\r\n        emit AuctionEnded(highestBidder, highestBid);\r\n\r\n        // 3. Interaction\r\n        beneficiary.transfer(highestBid);\r\n        Store(store).wonItem(sku,highestBid,highestBidder);\r\n    }\r\n}\r\n",
@@ -208,7 +208,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 213,
-        "sourceUnit": 2046,
+        "sourceUnit": 2098,
         "src": "28:21:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -757,7 +757,7 @@
                           "name": "block",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2050,
+                          "referencedDeclaration": 2102,
                           "src": "1348:5:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_block",
@@ -886,7 +886,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2060,
+                        "referencedDeclaration": 2112,
                         "src": "1436:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -1080,7 +1080,7 @@
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2050,
+                            "referencedDeclaration": 2102,
                             "src": "1982:5:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
@@ -1156,10 +1156,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2063,
-                        2064
+                        2115,
+                        2116
                       ],
-                      "referencedDeclaration": 2064,
+                      "referencedDeclaration": 2116,
                       "src": "1960:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1207,7 +1207,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2060,
+                            "referencedDeclaration": 2112,
                             "src": "2170:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -1283,10 +1283,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2063,
-                        2064
+                        2115,
+                        2116
                       ],
-                      "referencedDeclaration": 2064,
+                      "referencedDeclaration": 2116,
                       "src": "2148:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1478,7 +1478,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2060,
+                        "referencedDeclaration": 2112,
                         "src": "2671:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -1540,7 +1540,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2060,
+                        "referencedDeclaration": 2112,
                         "src": "2705:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -1583,7 +1583,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2060,
+                          "referencedDeclaration": 2112,
                           "src": "2750:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1612,7 +1612,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2060,
+                          "referencedDeclaration": 2112,
                           "src": "2762:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1766,7 +1766,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2060,
+                        "referencedDeclaration": 2112,
                         "src": "2912:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -1893,7 +1893,7 @@
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2060,
+                                "referencedDeclaration": 2112,
                                 "src": "3168:3:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
@@ -1999,7 +1999,7 @@
                                   "name": "msg",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 2060,
+                                  "referencedDeclaration": 2112,
                                   "src": "3205:3:0",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_magic_message",
@@ -2094,7 +2094,7 @@
                                       "name": "msg",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 2060,
+                                      "referencedDeclaration": 2112,
                                       "src": "3340:3:0",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_magic_message",
@@ -2290,7 +2290,7 @@
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2050,
+                            "referencedDeclaration": 2102,
                             "src": "4331:5:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
@@ -2366,10 +2366,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2063,
-                        2064
+                        2115,
+                        2116
                       ],
-                      "referencedDeclaration": 2064,
+                      "referencedDeclaration": 2116,
                       "src": "4323:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2461,10 +2461,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2063,
-                        2064
+                        2115,
+                        2116
                       ],
-                      "referencedDeclaration": 2064,
+                      "referencedDeclaration": 2116,
                       "src": "4401:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2572,10 +2572,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2063,
-                        2064
+                        2115,
+                        2116
                       ],
-                      "referencedDeclaration": 2064,
+                      "referencedDeclaration": 2116,
                       "src": "4466:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2879,10 +2879,10 @@
                           "name": "Store",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2045,
+                          "referencedDeclaration": 2097,
                           "src": "4731:5:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_Store_$2045_$",
+                            "typeIdentifier": "t_type$_t_contract$_Store_$2097_$",
                             "typeString": "type(contract Store)"
                           }
                         },
@@ -2896,7 +2896,7 @@
                         "nodeType": "FunctionCall",
                         "src": "4731:12:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Store_$2045",
+                          "typeIdentifier": "t_contract$_Store_$2097",
                           "typeString": "contract Store"
                         }
                       },
@@ -2907,7 +2907,7 @@
                       "lValueRequested": false,
                       "memberName": "wonItem",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1906,
+                      "referencedDeclaration": 1958,
                       "src": "4731:20:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_uint256_$_t_address_$returns$__$",
@@ -2995,7 +2995,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 213,
-        "sourceUnit": 2046,
+        "sourceUnit": 2098,
         "src": "28:21:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -3544,7 +3544,7 @@
                           "name": "block",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2050,
+                          "referencedDeclaration": 2102,
                           "src": "1348:5:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_block",
@@ -3673,7 +3673,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2060,
+                        "referencedDeclaration": 2112,
                         "src": "1436:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -3867,7 +3867,7 @@
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2050,
+                            "referencedDeclaration": 2102,
                             "src": "1982:5:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
@@ -3943,10 +3943,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2063,
-                        2064
+                        2115,
+                        2116
                       ],
-                      "referencedDeclaration": 2064,
+                      "referencedDeclaration": 2116,
                       "src": "1960:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -3994,7 +3994,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2060,
+                            "referencedDeclaration": 2112,
                             "src": "2170:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -4070,10 +4070,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2063,
-                        2064
+                        2115,
+                        2116
                       ],
-                      "referencedDeclaration": 2064,
+                      "referencedDeclaration": 2116,
                       "src": "2148:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -4265,7 +4265,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2060,
+                        "referencedDeclaration": 2112,
                         "src": "2671:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -4327,7 +4327,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2060,
+                        "referencedDeclaration": 2112,
                         "src": "2705:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -4370,7 +4370,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2060,
+                          "referencedDeclaration": 2112,
                           "src": "2750:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -4399,7 +4399,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2060,
+                          "referencedDeclaration": 2112,
                           "src": "2762:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -4553,7 +4553,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2060,
+                        "referencedDeclaration": 2112,
                         "src": "2912:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -4680,7 +4680,7 @@
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2060,
+                                "referencedDeclaration": 2112,
                                 "src": "3168:3:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
@@ -4786,7 +4786,7 @@
                                   "name": "msg",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 2060,
+                                  "referencedDeclaration": 2112,
                                   "src": "3205:3:0",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_magic_message",
@@ -4881,7 +4881,7 @@
                                       "name": "msg",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 2060,
+                                      "referencedDeclaration": 2112,
                                       "src": "3340:3:0",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_magic_message",
@@ -5077,7 +5077,7 @@
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2050,
+                            "referencedDeclaration": 2102,
                             "src": "4331:5:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
@@ -5153,10 +5153,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2063,
-                        2064
+                        2115,
+                        2116
                       ],
-                      "referencedDeclaration": 2064,
+                      "referencedDeclaration": 2116,
                       "src": "4323:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -5248,10 +5248,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2063,
-                        2064
+                        2115,
+                        2116
                       ],
-                      "referencedDeclaration": 2064,
+                      "referencedDeclaration": 2116,
                       "src": "4401:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -5359,10 +5359,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2063,
-                        2064
+                        2115,
+                        2116
                       ],
-                      "referencedDeclaration": 2064,
+                      "referencedDeclaration": 2116,
                       "src": "4466:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -5666,10 +5666,10 @@
                           "name": "Store",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2045,
+                          "referencedDeclaration": 2097,
                           "src": "4731:5:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_Store_$2045_$",
+                            "typeIdentifier": "t_type$_t_contract$_Store_$2097_$",
                             "typeString": "type(contract Store)"
                           }
                         },
@@ -5683,7 +5683,7 @@
                         "nodeType": "FunctionCall",
                         "src": "4731:12:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Store_$2045",
+                          "typeIdentifier": "t_contract$_Store_$2097",
                           "typeString": "contract Store"
                         }
                       },
@@ -5694,7 +5694,7 @@
                       "lValueRequested": false,
                       "memberName": "wonItem",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1906,
+                      "referencedDeclaration": 1958,
                       "src": "4731:20:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_uint256_$_t_address_$returns$__$",
@@ -5761,5 +5761,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-08-23T15:36:43.759Z"
+  "updatedAt": "2018-08-24T15:48:33.689Z"
 }
