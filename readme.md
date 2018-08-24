@@ -53,10 +53,12 @@ The Auction contract is triggered on creating an auction item in a Store. Each a
 
 ```npm install -g truffle```
 
-2. Download the box. This also takes care of installing the necessary dependencies.
+2. Download the repository. This also takes care of installing the necessary dependencies.
 
 ```
 Clone project: git clone https://github.com/GitNgk/marketplace.git
+cd marketplace
+npm install
 ```
 
 3. Run the development console.
@@ -83,6 +85,6 @@ Truffle can run tests written in Solidity or JavaScript against your smart contr
 truffle test
 ```
 
-###Running with MetaMask
+### Running with MetaMask
 
 Since truffle develop exposes the blockchain onto port 8545, you'll need to add a Custom RPC network of http://localhost:8545 in your MetaMask to make it work.
