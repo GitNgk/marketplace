@@ -1,0 +1,10 @@
+const getCampaignInstance = (web3, contractDefinition,address) => {
+  // create the instance
+  const instance = new web3.eth.Contract(
+    contractDefinition.abi,
+    address
+  )
+  return instance
+}
+
+export default getCampaignInstance

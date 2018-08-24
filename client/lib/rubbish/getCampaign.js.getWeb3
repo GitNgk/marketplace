@@ -1,0 +1,13 @@
+import getWeb3 from './getWeb3'
+import Web3 from 'web3'
+import Campaign from './contracts/Campaign.json'
+
+const getCampaignInstance = async (address) => {
+   const web3 = await getWeb3();
+   const instance = new web3.eth.Contract(
+       Campaign.abi,
+       address)
+   return instance    
+}
+
+export default getCampaignInstance
