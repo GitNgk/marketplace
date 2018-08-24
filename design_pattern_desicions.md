@@ -109,16 +109,16 @@ e.g Purchasing example
  Simple Purchase {State}
 
  \o/
-  |			   \o/
- / \		    |
-  |			   / \	
-  |			    ^
+  |        \o/
+ / \        |
+  |        / \
+  |         ^
  =|=========|===============Store.sol========================================================================
   |         |
   |---------|--------------addItem>----------->[Creates Item sets auction or sale method]
-  |			|--------------buyItem>----------->[Buyer buys item1 --reduces the inventory]    {forSale}              StartTime
-  |			|
-  |         |					
+  |         |--------------buyItem>----------->[Buyer buys item1 --reduces the inventory]    {forSale}              StartTime
+  |         |
+  |         |
  =|=========|==============Orders.sol========================================================================
   |         |
   |         |                                                              
@@ -133,11 +133,11 @@ e.g Purchasing example
 e.g Auction example
 ```
  \o/
-  |		  \o/
- / \	      |
-  |		  / \     \o/
+  |        \o/
+ / \        |
+  |        / \     \o/
   |         |       |
-  |  		   |      / \
+  |         |      / \
   |         |       |
  =|=========|=======|=======Store.sol============================================================================
   |         |       |
@@ -145,10 +145,10 @@ e.g Auction example
   |         |       |
   |         |       |
  =|=========|=======|=======Auction.sol==========================================================================
-  |		   |       |
+  |         |       |
   |         |-------|------bid>--------------->[Create HighestBid](lock bid value)         {Auction (now<auctionEnd}}
-  |			|       |
-  |		   |       |------bid>--------------->[Replace last bid ](lock bid value)-----
+  |         |       |
+  |         |       |------bid>--------------->[Replace last bid ](lock bid value)-----
   |         |       |                                                                 |
   |         |-------|-withdraw>-------------->(allow previous bid amount withdrawal)<-|
   |                 |
