@@ -1,6 +1,6 @@
 ## Race Conditions
 
-###Reentrancy
+### Reentrancy
 The Use of `send()` has been employed in application and a state machine implementation used within contract. All state changes happen prior to transfers to stop withdrawals:
 ```
        require(order.state != State.Refund,"Check REFUND" );
@@ -16,14 +16,14 @@ and
        }
 ```
 
-###Cross-function Race Conditions
+### Cross-function Race Conditions
 This case has been avoided as no external function calls are made during withdrawal of tokens. Also by maintaining state information of each order provides second layer to defence.
 
-###Pitfalls in Race Condition Solutions
+### Pitfalls in Race Condition Solutions
 
 ## Transaction-Ordering Dependence (TOD) / Front Running
 
-###Timestamp Dependence
+### Timestamp Dependence
 Avoided as the Store can tolerate 30-second drift in time and `block.timestamp` used over `now`.
 
 ###Integer Overflow and Underflow & Underflow in Depth: Storage Manipulation
@@ -33,7 +33,6 @@ modifier forSale (uint _sku,uint _quantity) { require(items[_sku].inventory >= _
 ```
 In addition to this the SafeMath.sol library has been used when doing uint operations.
 
-Gas Limit
 ###TX.ORIGIN PROBLEM
 - Used msg.sender rather than tx.origin
 
