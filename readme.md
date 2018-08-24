@@ -26,7 +26,7 @@ The Factory contract has four main sections with four levels of access:
  4. Manager (Site) Only: Add and delete Administrators.
 
 ### Store
-Each store has a Name and Owner/Manager. A manager can only have ONE STORE. The store maintains item related information’s such as product, price, inventory and sale method. IPFS is used to maintain item Images. Each store is linked to an orders contract that maintains the orders information for the store once product is purchased. Items can be brought from the store or auctioned. Auctioned items trigger an auction contract and with an auction lifetime. Payment are never held in the store contract.
+Each store has a Name and Owner/Manager. A manager can only have ONE store per administrator grant (second Store would need administrator to add user again). The store maintains item related information’s such as product, price, inventory and sale method. IPFS is used to maintain item Images. Each store is linked to an orders contract that maintains the orders information for the store once product is purchased. Items can be brought from the store or auctioned. Auctioned items trigger an auction contract and with an auction lifetime. Payment are never held in the store contract.
 
 Each store has a contract address for the calling factory and relevant orders contract. Task between the three are verified as authentic request through these addresses.
 
@@ -36,7 +36,7 @@ Maintains orders for its store. Order scan only be created from the Store associ
  2. DeliveryAddress: Buyer to update address information.
  3. Shipped: Seller(manager) issue this stage
  4. Received: Buyer can confirm receipt
- 5. Refund: Buyer Only request refund (**REFUND requests can only occur after shipment and before refund time expires)
+ 5. Refund: Buyer Only request refund (REFUND requests can only occur after shipment and before refund time expires)
  6. Approved: Refund Approved by Store manager or Site administrators in case of dispute
  7. Rejected: Reject Refund by Store manager
  8. Complete: Complete after Refund time expires/Refund approved by store manager/ factory Admin/Ether withdrawn by seller or buyer
