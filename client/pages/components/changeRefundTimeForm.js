@@ -9,6 +9,8 @@ class ChangeRefundTimeForm extends Component {
             contract: this.props.contract,
             notify: 'Refund Time in days for future stores.',
             newTime:'',
+            errorMessage:'',
+            loading:false,
   };
   onSubmit = async (event) =>{
      event.preventDefault();

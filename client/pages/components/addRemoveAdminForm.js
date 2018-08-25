@@ -12,6 +12,8 @@ class AddRemoveAdminForm extends Component {
             notify:'Address',
             action:'',
             newAddress:'',
+            errorMessage:'',
+            loading:false,
   };
   onSubmit = async (event) =>{
      event.preventDefault();

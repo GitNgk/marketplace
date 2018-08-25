@@ -9,8 +9,8 @@ class ManageOrderForm extends Component {
             notify:'Deliver To This Address',
             state:'',
             newAddress:'',
-      loading:false,
-      errorMessage:''
+            loading:false,
+            errorMessage:''
   };
 
   onSubmit = async (event) =>{

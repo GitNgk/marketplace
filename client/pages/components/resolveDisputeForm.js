@@ -13,6 +13,8 @@ class ResolveDispute extends Component {
             orderId:'',
             winnersAddress:'',
             storeAddress:'',
+            errorMessage:'',
+            loading:false,
   };
   onSubmit = async (event) =>{
      event.preventDefault();

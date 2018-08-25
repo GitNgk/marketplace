@@ -12,6 +12,8 @@ class UpdateContractFactory extends Component {
             notify:'New Address of Factory',
             newAddress:'',
             storeAddress:'',
+            errorMessage:'',
+            loading:false,
   };
   onSubmit = async (event) =>{
      event.preventDefault();

@@ -10,6 +10,8 @@ class BuyForm extends Component {
             notify:'Buy',
             quantity:'',
             value:'',
+            errorMessage:'',
+            loading:false,
   };
   onSubmit = async (event) =>{
      event.preventDefault();

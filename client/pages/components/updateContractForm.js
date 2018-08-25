@@ -13,6 +13,8 @@ class UpdateContractForm extends Component {
             action:'',
             newAddress:'',
             currentAddress:'',
+            errorMessage:'',
+            loading:false,
   };
   onSubmit = async (event) =>{
      event.preventDefault();

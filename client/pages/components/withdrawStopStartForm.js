@@ -11,6 +11,8 @@ class WithdrawStopStartForm extends Component {
             contract: this.props.contract,
             notify:'Stop/Start Order creation and money transfer!',
             ordersAddress:'',
+            errorMessage:'',
+            loading:false,
   };
   onSubmit = async (event) =>{
      event.preventDefault();
