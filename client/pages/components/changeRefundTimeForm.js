@@ -20,9 +20,7 @@ class ChangeRefundTimeForm extends Component {
      const timeInSec = newTime *86400 ;
      try {
             await contract.methods.updateRefundTime(timeInSec).send({from:accounts[0]});
-            const checkTask = await contract.methods.refundTime().call({from:accounts[0]});
-            checkTask == timeInSec ?  this.setState({notify:'Successfull!'}) : 
-				this.setState({notify:'Change Failed!'})
+            this.setState({notify:'Successfull!'})
       } catch(err){
          this.setState({errorMessage:err.message});
       }
