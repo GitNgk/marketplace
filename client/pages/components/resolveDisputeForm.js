@@ -24,7 +24,7 @@ class ResolveDispute extends Component {
  
      try {
          await contract.methods.resolveDispute(orderId,storeAddress,winnersAddress).send({from:accounts[0]});
-         this.setState({notify:winnerAddress+ 'Can now withdraw from Order!'})
+         this.setState({notify:'Can now withdraw from Order!'})
       } catch(err){
          this.setState({errorMessage:err.message});
       }
@@ -43,7 +43,7 @@ class ResolveDispute extends Component {
              />
             </Form.Field>
             <Form.Field>
-             <label>Address of Store to change</label>
+             <label>Address of Store</label>
              <Input label="Address"
               labelPosition="right"
               value={this.state.storeAddress}

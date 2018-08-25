@@ -1,6 +1,6 @@
 import React, { Component} from 'react'
 import Web3Container from '../../lib/Web3Container'
-import { Card, Button, Segment, Divider, Form, Input, Message } from 'semantic-ui-react' 
+import { Card, Button, Grid, Segment, Divider, Form, Input, Message } from 'semantic-ui-react' 
 import Layout from '../components/Layout.js'
 import AddRemoveAdminForm from '../components/addRemoveAdminForm'
 import AddRemoveStoreManagerForm from '../components/addRemoveStoreManagerForm'
@@ -59,38 +59,51 @@ class StoresIndex extends Component {
       <Layout msg="Home Page" link="/">
         <div>
           <h3>Site Administration</h3>
-          <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css"></link>
-      <Segment.Group horizontal>
-      <Segment>
-          {this.renderCards()}
-        <Divider section />
-          <h4>Open Stores</h4>
-          <Card.Group items={items} /> 
-      </Segment>
-      <Segment>
-          <h4>Add & Remove Sellers</h4>
-          <AddRemoveStoreManagerForm accounts={accounts} contract={contract} web3={web3} />
-        <Divider section />
-          <h4>Resolve Disputed Refunds</h4>
-          <ResolveDisputeForm accounts={accounts} contract={contract} web3={web3} />
-        <Divider section />
-          <h4>Contract Changes</h4>
-          <UpdateContractForm accounts={accounts} contract={contract} web3={web3} />
-        <Divider section />
-          <UpdateContractFactoryForm accounts={accounts} contract={contract} web3={web3} />
-        <Divider section />
-          <WithdrawStopStartForm accounts={accounts} contract={contract} web3={web3} />
-        <Divider section />
-          <h4>Add & Remove Site Administrators</h4>
-          <AddRemoveAdminForm accounts={accounts} contract={contract} web3={web3} />
-        <Divider section />
-          <h4>Change Refund Policy Time</h4>
-          <ChangeRefundTimeForm accounts={accounts} contract={contract} />
-      </Segment>
-      </Segment.Group>
-        </div>
-     </Layout>
-     );
+          <Grid>
+            <Grid.Row>
+             <Grid.Column width={8}>
+              {this.renderCards()}
+              <Divider section />
+              <h4>Open Stores</h4>
+              <Card.Group items={items} /> 
+             </Grid.Column>
+
+             <Grid.Column width={8}>
+              <Segment color='red'>
+               <h3>Store Administration</h3>
+               <h4>Add & Remove Sellers</h4>
+               <AddRemoveStoreManagerForm accounts={accounts} contract={contract} web3={web3} />
+               <Divider section />
+               <h4>Resolve Disputed Refunds</h4>
+               <ResolveDisputeForm accounts={accounts} contract={contract} web3={web3} />
+               <Divider section />
+               <h4>Stop/Start withdrawals of Orders contract</h4>
+               <WithdrawStopStartForm accounts={accounts} contract={contract} web3={web3} />
+              </Segment>
+              <Segment color='red'>
+               <h3>Manager Tasks</h3>
+               <h4>Add & Remove Site Administrators</h4>
+               <AddRemoveAdminForm accounts={accounts} contract={contract} web3={web3} />
+              </Segment>
+              <Segment color='red'>
+               <h3>Contract Upgrades and Site Administration</h3>
+               <h4>Change the Factory Contract</h4>
+               <UpdateContractFactoryForm accounts={accounts} contract={contract} web3={web3} />
+               <Divider section />
+
+               <h4>Contract Changes</h4>
+               <UpdateContractForm accounts={accounts} contract={contract} web3={web3} />
+               <Divider section />
+
+               <h4>Change Refund Policy Time</h4>
+               <ChangeRefundTimeForm accounts={accounts} contract={contract} />
+              </Segment>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+       </div>
+      </Layout>
+    );
   }
 }
 

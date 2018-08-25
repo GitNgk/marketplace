@@ -24,15 +24,10 @@ class AddRemoveAdminForm extends Component {
      try {
         if (action=='add') {
             await contract.methods.addAdminStaff(newAddress).send({from:accounts[0]});
-            const checkTask = await contract.methods.adminStaff(newAddress).call({from:accounts[0]});
-            checkTask ?  this.setState({notify:'Successfull!'}) :
-                                this.setState({notify:'Failed to Add!'})
+            this.setState({notify:'Successfull!'}) 
         } else if( action =='remove'){
-            
-            await contract.methods.delAdminStaff(newAddress).send({from:accounts[0]});
-            const checkTask = await contract.methods.adminStaff(newAddress).call({from:accounts[0]});
-            checkTask ?  this.setState({notify:'Failed to Remove!'}) :
-                                this.setState({notify:'Successfull!'})
+            await contract.methods.delAdminStaff(newAddress).send({from:accounts[0],gas:30000});
+            this.setState({notify:'Successfull!'})
         } else {
             throw new Error('Must Choose action [Add|Remove]') 
         }

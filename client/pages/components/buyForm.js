@@ -7,7 +7,6 @@ import { Link } from '../../routes'
 class BuyForm extends Component {
   state ={
             inventory: this.props.inventory,
-            notify:'Buy',
             quantity:'',
             value:'',
             errorMessage:'',
@@ -22,8 +21,6 @@ class BuyForm extends Component {
      try {
         if (action) {
             await contract.methods.buyItem(action).send({from:accounts[0]});
-            const checkTask = await contract.methods.adminStaff(newAddress).call({from:accounts[0]});
-            this.setState({notify:'Failed to Add!'})
         } else {
             throw new Error('Must Choose action [Add|Remove]') 
         }
