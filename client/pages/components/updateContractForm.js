@@ -52,7 +52,7 @@ class UpdateContractForm extends Component {
              />
             </Form.Field>
             <Form.Field>
-             <label>Address of Store or Orders contract where change will be made.</label>
+             <label>Store or Orders contract where change will be made.</label>
              <Input label="Address"
               labelPosition="right"
               value={this.state.currentAddress}
