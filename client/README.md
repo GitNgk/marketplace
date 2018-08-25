@@ -4,11 +4,9 @@ This is the frontend client for our dapp. It is built with Next.js and uses a re
 
 ## Pages
 
-There are three pages:
+There re three pages:
 
-- `index.js` — This is a barebones Next.js page. It links to other pages which are web3-enabled. In your dapp, this can be a landing page.
-- `accounts.js` — This is a page listing the accounts returned from Web3. This file demonstrates the basic use of the `Web3Container` component.
-- `dapp.js` — This is a barebones demonstration dapp that utilizes the `Web3Container` component, but also makes calls to the contract. More specifically, it stores a value and gets a value.
+- `index.js` — This is the landing page.
 
 ## The `lib` folder
 
@@ -30,8 +28,24 @@ This is a function for actually getting the Web3 object. Unfortunately, this fil
 
 ### `getContract.js`
 
-This function requires `web3` to be passed in. It uses `truffle-contract` to initialize and return a contract instance. This function is used by `Web3Container.js`. You probably don't need to change anything in this file.
+This function requires `web3` to be passed in. It uses `truffle-contract` to initialize and return a contract instance `Factory.sol`. This function is used by `Web3Container.js`. You probably don't need to change anything in this file.
+
+### `getStore.js`
+
+This function requires `web3` to be passed in. It uses `truffle-contract` to initialize and return a contract instance for `Store.sol`.
+
+### `getOrders.js`
+
+This function requires `web3` to be passed in. It uses `truffle-contract` to initialize and return a contract instance for `Orders.sol`.
+
+### `getAuction.js`
+
+This function requires `web3` to be passed in. It uses `truffle-contract` to initialize and return a contract instance for `Auction.sol`.
 
 ### `getAccounts.js`
 
 This simply wraps `web3.eth.getAccounts` into a Promise so we can use it cleanly inside `Web3Container.js`. You probably don't need to change anything in this file.
+
+### `ipfs.js`
+
+This sets up the connection to infura.io ipfs API server
