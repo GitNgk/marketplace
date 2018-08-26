@@ -81,7 +81,7 @@ class StoresIndex extends Component {
                <WithdrawStopStartForm accounts={accounts} contract={contract} web3={web3} />
               </Segment>
               <Segment color='red'>
-               <h3>Manager Tasks</h3>
+               <h3>Factory Manager Tasks</h3>
                <h4>Add & Remove Site Administrators</h4>
                <AddRemoveAdminForm accounts={accounts} contract={contract} web3={web3} />
               </Segment>
