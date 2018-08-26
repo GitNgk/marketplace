@@ -53,21 +53,23 @@ The Auction contract is triggered on creating an auction item in a Store. Each a
 
 ```npm install -g truffle```
 
-2. Download the repository. This also takes care of installing the necessary dependencies.
+2. Download the repository. Using `git clone` and `npm install` should take care of the necessary dependencies.
 
 ```
-Clone project: git clone https://github.com/GitNgk/marketplace.git
-cd marketplace
+git clone https://github.com/GitNgk/marketplace.git
+cd marketplace/client
 npm install
 ```
 
-3. Run the development console.
+3. Run the development console (use ganache-cli -l 7000000 if you wish to test using Remix).
 ```
 ganache-cli
 ```
 
 4. Compile and migrate the smart contracts. Note inside the development console we don't preface commands with truffle.
 ```
+//working directory marketplace 
+cd marketplace
 truffle compile
 truffle migrate --reset
 ```

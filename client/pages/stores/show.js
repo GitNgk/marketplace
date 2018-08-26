@@ -37,11 +37,12 @@ class StoreShow extends Component {
       const accounts = await web3.eth.getAccounts()
       const store = await getStore(web3, address)
       const summary = await store.methods.getSummary().call();
+      const balance = await web3.eth.getBalance(summary[2]);
 
     await this.setStateAsync({
         web3: web3,
         storeName: summary[0],
-        balance: web3.utils.fromWei(summary[1],'ether'),
+        balance: web3.utils.fromWei(balance,'ether'),
         ordersAddress: summary[2],
         itemsCount: summary[3],
         manager: summary[4]})
@@ -89,7 +90,7 @@ class StoreShow extends Component {
         {
            header: balance,
            meta: 'Store Balance (ether)',
-           description: 'The balance is how much money this store has',
+           description: 'The balance is how much money this store has in Orders',
            style: { overflowWrap: 'break-word'} 
         }
      ]; 
