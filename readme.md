@@ -61,15 +61,18 @@ cd marketplace/client
 npm install
 ```
 
-3. Run the development console (use ganache-cli -l 7000000 if you wish to test using Remix).
+3. Run the development console in another terminal (use ganache-cli -l 7000000 if you wish to test using Remix).
 ```
 ganache-cli
 ```
 
 4. Compile and migrate the smart contracts. Note inside the development console we don't preface commands with truffle.
 ```
-//working directory marketplace 
-cd marketplace
+pwd
+../marketplace/client  //should be in client directory after previous step (npm install)
+cd ../                 //Back to top level marketplace directory
+pwd
+../marketplace         //should be in top level marketplace directory
 truffle compile
 truffle migrate --reset
 ```
@@ -78,7 +81,9 @@ truffle migrate --reset
 
 ```
 // Change directory to the front-end folder
-cd marketplace/client
+pwd
+../marketplace/
+cd client/
 // Serves the front-end on http://localhost:3000
 npm run dev
 ```
